@@ -36,6 +36,6 @@ fetch(url)
 dropdown.addEventListener('change', function() {
     const selectedInstitution = dropdown.value;
     const contactInfo = institutionData[selectedInstitution] || 'Contact info not available';
-    contactInfoDiv.innerHTML = `<strong>contact information:</strong> Please contact ${contactInfo} with any questions.`;
+    contactInfoDiv.innerHTML = `Please contact <strong>${contactInfo}</strong> with any questions.`;
 });
 
